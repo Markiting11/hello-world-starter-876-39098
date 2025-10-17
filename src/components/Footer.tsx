@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Linkedin, Mail, MessageSquare } from "lucide-react";
+import { Linkedin, Mail, MessageSquare, Facebook } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -21,6 +21,15 @@ const Footer = () => {
                 aria-label="LinkedIn Profile"
               >
                 <Linkedin size={20} />
+              </a>
+              <a
+                href="https://www.facebook.com/arshad.ali.7146557"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-primary transition-colors"
+                aria-label="Facebook Profile"
+              >
+                <Facebook size={20} />
               </a>
               <a
                 href="mailto:Arshad2097@gmail.com"

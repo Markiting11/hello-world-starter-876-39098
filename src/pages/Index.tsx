@@ -123,11 +123,11 @@ const Index = () => {
               <div className="text-sm text-muted-foreground">Years Experience</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-primary mb-2">100+</div>
+              <div className="text-4xl font-bold text-primary mb-2">1000+</div>
               <div className="text-sm text-muted-foreground">Projects Completed</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-primary mb-2">50+</div>
+              <div className="text-4xl font-bold text-primary mb-2">300+</div>
               <div className="text-sm text-muted-foreground">Happy Clients</div>
             </div>
             <div className="text-center">
