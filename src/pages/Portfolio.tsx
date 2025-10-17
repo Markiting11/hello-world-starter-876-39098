@@ -1,4 +1,4 @@
-import { ExternalLink, TrendingUp, Star } from "lucide-react";
+import { ExternalLink, TrendingUp, Star, Download, FileSpreadsheet } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -177,6 +177,100 @@ const Portfolio = () => {
                 </div>
               </Card>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Work Samples - Downloadable Files */}
+      <section className="py-20 bg-gradient-to-br from-primary/5 via-accent/10 to-background">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12 animate-fade-in">
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+                Download Work Samples
+              </h2>
+              <p className="text-lg text-muted-foreground">
+                Real examples of local citations and directory submissions work for clients
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-6">
+              {/* Sample 1 */}
+              <Card className="p-6 hover:shadow-xl transition-all hover-scale animate-fade-in">
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <FileSpreadsheet className="text-primary" size={24} />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-lg font-semibold text-foreground mb-2">
+                      200 Directory Submissions
+                    </h3>
+                    <p className="text-sm text-muted-foreground mb-4">
+                      Complete directory submission report for Utility Contractor San Diego - 200+ live citations with URLs, login details, and status tracking.
+                    </p>
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      <Badge variant="secondary" className="text-xs">US Directories</Badge>
+                      <Badge variant="secondary" className="text-xs">200+ Citations</Badge>
+                      <Badge variant="secondary" className="text-xs">Live URLs</Badge>
+                    </div>
+                    <a 
+                      href="/samples/200_Directories_Utility_Contractor_San_Diego.xlsx" 
+                      download
+                      className="inline-block"
+                    >
+                      <Button className="w-full shadow-md hover:shadow-lg transition-shadow">
+                        <Download className="w-4 h-4 mr-2" />
+                        Download Sample (XLSX)
+                      </Button>
+                    </a>
+                  </div>
+                </div>
+              </Card>
+
+              {/* Sample 2 */}
+              <Card className="p-6 hover:shadow-xl transition-all hover-scale animate-fade-in" style={{ animationDelay: "0.1s" }}>
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <FileSpreadsheet className="text-primary" size={24} />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-lg font-semibold text-foreground mb-2">
+                      Top 100 UK Directories
+                    </h3>
+                    <p className="text-sm text-muted-foreground mb-4">
+                      Premium UK directory submissions for Website Spot - 100+ high-authority citations with domain authority tracking and live links.
+                    </p>
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      <Badge variant="secondary" className="text-xs">UK Directories</Badge>
+                      <Badge variant="secondary" className="text-xs">100+ Citations</Badge>
+                      <Badge variant="secondary" className="text-xs">High DA</Badge>
+                    </div>
+                    <a 
+                      href="/samples/TOP_UK_100.xlsx" 
+                      download
+                      className="inline-block"
+                    >
+                      <Button className="w-full shadow-md hover:shadow-lg transition-shadow">
+                        <Download className="w-4 h-4 mr-2" />
+                        Download Sample (XLSX)
+                      </Button>
+                    </a>
+                  </div>
+                </div>
+              </Card>
+            </div>
+
+            <div className="mt-8 p-6 bg-card rounded-lg border border-border text-center animate-fade-in" style={{ animationDelay: "0.2s" }}>
+              <p className="text-sm text-muted-foreground mb-4">
+                <strong className="text-foreground">Note:</strong> These are real work samples showing the quality and detail of my directory submission and local citation services. Each file contains live URLs, submission status, and complete tracking information.
+              </p>
+              <Link to="/contact">
+                <Button variant="outline">
+                  Request Custom Quote
+                  <ExternalLink className="ml-2" size={16} />
+                </Button>
+              </Link>
+            </div>
           </div>
         </div>
       </section>
